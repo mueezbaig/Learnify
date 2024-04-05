@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block title %}Register{% endblock %}
+
+{% block content %}
+<head>
+    
+    <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <h1 style="color: white;">Register</h1>
+            <form method="post" action="{{ url_for('register') }}">
+                <div class="form-group">
+                    <label for="first_name" style="color: white;">First Name</label>
+                    <input type="text" class="form-control" id="first_name" name="first_name" required>
+                </div>
+                <div class="form-group">
+                    <label for="last_name" style="color: white;">Last Name</label>
+                    <input type="text" class="form-control" id="last_name" name="last_name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email" style="color: white;">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password" style="color: white;">Password</label>
+                    <input type="password" class="form-control" id="password" name="password" required>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="is_teacher" name="is_teacher">
+                    <label class="form-check-label" for="is_teacher" style="color: white;">I am a teacher</label>
+                </div>
+                <button type="submit" class="btn btn-primary mt-3" value="Register">Register</button>
+            </form>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,241 @@
+{% if logged_in %}
+    {% extends "base1.html" %}
+{% else %}
+    {% extends "base.html" %}
+{% endif %}
+
+{% block title %}Learnify{% endblock %}
+
+{% block content %}
+<head>
+    
+    <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+<div class="container">
+  <div class="row">
+      <div class="col-md-4">
+          <div class="image-container">
+              <img src="https://media.istockphoto.com/id/1970267739/photo/artificial-intelligence-technology-concept-big-data-collection-connects-with-intelligent.webp?b=1&s=170667a&w=0&k=20&c=wjad850-JeKaoI9Bv96rulSFB8Au_DX3rvT8gyshVOg=" alt="Image 1">
+              <div class="overlay">
+                  <h3>Spark Your Potential</h3>
+                  <p>Ignite your passion and explore new horizons through learning and growth.</p>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4">
+          <div class="image-container">
+              <img src="https://media.istockphoto.com/id/852859026/photo/virtual-screen-hologram-technology.webp?b=1&s=170667a&w=0&k=20&c=7WTq3D3p-AeUsixajemtueoMqDa9p4L-cK5ZgZ56t_0=" alt="Image 2">
+              <div class="overlay">
+                  <h3>Discover Your Potential</h3>
+                  <p>Embark on a journey of self-discovery and personal development to unleash your true potential.</p>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4">
+          <div class="image-container">
+              <img src="https://media.istockphoto.com/id/1026632588/photo/funny-child-girl-draws-laughing-shows-hands-dirty-with-paint.webp?b=1&s=170667a&w=0&k=20&c=E4tP1UIIvPHefQyVnaH5ew-J7LGB1i5bH07Cg13zMSo=" alt="Image 3">
+              <div class="overlay">
+                  <h3>Elevate Your Mind</h3>
+                  <p>Empower your mind with wisdom and expertise, paving the way for boundless opportunities and success.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<section id="our_vision" class="py-5 mb-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="display-4">Our Vision</h2><br>
+                <p class="lead">At Learnify, we envision empowering learners worldwide by providing high-quality online education. Our core principles drive us:</p><br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="text-center">
+                    <i class="fas fa-lightbulb fa-4x text-primary mb-4"></i>
+                    <h4 class="mb-3">Innovation</h4>
+                    <p>We believe in continuous innovation to create engaging and effective learning experiences.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="text-center">
+                    <i class="fas fa-chalkboard-teacher fa-4x text-success mb-4"></i>
+                    <h4 class="mb-3">Education</h4>
+                    <p>Our commitment to education is unwavering. We strive to make learning accessible to all.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="text-center">
+                    <i class="fas fa-globe fa-4x text-info mb-4"></i>
+                    <h4 class="mb-3">Global Reach</h4>
+                    <p>We connect learners and experts from around the world, fostering a global learning community.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="study_areas" class="py-5 mb-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="display-4">Explore Study Areas</h2><br>
+                <p class="lead">We offer a wide range of courses in various technical fields:</p><br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="text-center mb-4">
+                    <i class="fas fa-laptop-code fa-4x text-primary"></i>
+                    <h4 class="my-3">Web Development</h4>
+                    <p>Learn front-end and back-end web development to build interactive websites and web applications.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="text-center mb-4">
+                    <i class="fas fa-database fa-4x text-success"></i>
+                    <h4 class="my-3">Data Science</h4>
+                    <p>Master data analysis, machine learning, and data visualization to derive insights from data.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="text-center mb-4">
+                    <i class="fas fa-cogs fa-4x text-info"></i>
+                    <h4 class="my-3">Machine Learning</h4>
+                    <p>Explore the world of AI, from neural networks to natural language processing.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="text-center mb-4">
+                    <i class="fas fa-robot fa-4x text-primary"></i>
+                    <h4 class="my-3">Artificial Intelligence</h4>
+                    <p>Explore the world of AI, from neural networks to natural language processing.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="text-center mb-4">
+                    <i class="fas fa-chart-bar fa-4x text-success"></i>
+                    <h4 class="my-3">Business Analytics</h4>
+                    <p>Analyze business data, make informed decisions, and drive business success with analytics.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="text-center mb-4">
+                    <i class="fas fa-palette fa-4x text-info"></i>
+                    <h4 class="my-3">Graphic Design</h4>
+                    <p>Learn the art of visual communication, graphic design, and creative expression.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="courses" class="py-5 mb-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Courses We Offer</h2>
+        <div id="courseCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Placeholder for courses carousel items -->
+                {% for course in courses %}
+                    {% if loop.index0 % 2 == 0 %}
+                        <div class="carousel-item {% if loop.first %}active{% endif %}">
+                            <div class="row">
+                    {% endif %}
+                    <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                        <div class="course-card card-custom">
+                            <div class="course-image mb-3">
+                                <img src="https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/265889073/original/245f149f6ee5e1b2f9794daeda47c22435e93303/software-testing-and-mobile-application-testing.jpg" alt="Course Image" class="card-custom">
+                            </div>
+                            <div class="course-details mb-4">
+                                <h3 class="px-3">{{ course.title }}</h3>
+                                <p class="px-3"><strong>Category:</strong> {{ course.category }}</p>
+                                <p class="px-3">{{ course.summary }}</p>
+                                <p><i class="fas fa-dollar-sign px-3"></i> Price: ${{ course.price }}</p>
+                                <p><i class="far fa-clock px-2"></i> Duration: {{ course.duration }}</p>
+                                <a href="/course/{{ course.id }}" class="btn btn-primary mb-3 mt-3 mx-2">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    {% if loop.index0 % 2 == 1 or loop.last %}
+                        </div>
+                    </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+            <a class="carousel-control-prev" href="#courseCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#courseCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section id="our_beliefs" class="py-5 bg-light mb-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="display-4">Our Beliefs</h2><br>
+                <p class="lead">Our core values guide us in everything we do:</p><br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="text-center">
+                    <i class="fas fa-handshake fa-4x text-primary mb-4"></i>
+                    <h4 class="mb-3">Collaboration</h4>
+                    <p>We value collaboration and believe in the power of working together to achieve our goals.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="text-center">
+                    <i class="fas fa-heart fa-4x text-success mb-4"></i>
+                    <h4 class="mb-3">Passion</h4>
+                    <p>Passion drives us to create meaningful educational experiences that inspire learners.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="text-center">
+                    <i class="fas fa-balance-scale fa-4x text-info mb-4"></i>
+                    <h4 class="mb-3">Equality</h4>
+                    <p>We are committed to equality and ensuring access to education for all individuals, regardless of their background.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section id="about" class="py-5 text-center bg-light mb-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="display-4">About Learnify</h2>
+                <p class="lead">Welcome to Learnify, your gateway to a world of knowledge and skill-building. We are dedicated to providing high-quality online courses to help you reach your educational and professional goals. Whether you're a beginner looking to start your learning journey or a professional seeking to upgrade your skills, Learnify has something for everyone.</p>
+                
+                <img src="http://127.0.0.1:5500/Images/logo-white.png" alt="About Us Image" class="img-fluid rounded-circle mt-4" style="max-width: 300px; height: auto;">
+                <p class="lead">Learnify offers a wide range of courses, from programming and data science to business and marketing. Our platform is designed to make learning convenient and accessible, allowing you to study at your own pace from anywhere in the world. Join us on this educational journey and unlock your potential.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('#courseCarousel .carousel-inner').slick({
+            slidesToShow: 2, 
+            slidesToScroll: 1, 
+            infinite: true,
+            // Add any additional settings as needed
+        });
+    });
+</script>
+{% endblock %}
