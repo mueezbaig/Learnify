@@ -17,7 +17,7 @@ Learnify offers the following features:
 ## Screenshots
 
 ### web page
-![Course List](./Images/Web_page.png)
+![Course List](https://github.com/mueezbaig/Learnify/blob/main/Images/web_page.png)
 
 ## Getting Started
 
